@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Limelight&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Lab 2.4.2 - Formulary store</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/images/icon.png" alt="">
+        <h1>Pizza<span>&ltHack&gt</span></h1>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+
+                <div class="personal-data">
+                    <div class="form-group">
+                        <label for="tratamiento">Tratamiento:</label>
+                        <select id="tratamiento" name="tratamiento" required>
+                            <option value="">Seleccione uno</option>
+                            <option value="sr">Sr.</option>
+                            <option value="sra">Sra.</option>
+                        </select>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                        <div class="form-group">
+                            <label required for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" required>
+                            <label required for="direccion">Direccion:</label>
+                            <input type="text" id="direccion" name="direccion" required>
+                        </div>
+                    </div>
+
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="form-group">
+                    <label for="tipo-pizza">Tipo de Pizza:</label>
+                    <select id="tipo-pizza" name="tipo-pizza" required>
+                        <option value="">Seleccione una pizza</option>
+                        <option value="margherita">Margherita</option>
+                        <option value="pepperoni">Pepperoni</option>
+                        <option value="hawaiana">Hawaiana</option>
+                        <option value="4-quesos">Cuatro Quesos</option>
+                        <option value="vegetal">Vegetal</option>
+                        <option value="bbq">BBQ Chicken</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Ingredientes Extra:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="extra-queso" name="extras" value="queso">
+                        <label for="extra-queso">Extra de queso</label>
+
+                        <input type="checkbox" id="champinones" name="extras" value="champinones">
+                        <label for="champinones">Champiñones</label>
+
+                        <input type="checkbox" id="aceitunas" name="extras" value="aceitunas">
+                        <label for="aceitunas">Aceitunas</label>
+
+                        <input type="checkbox" id="cebolla" name="extras" value="cebolla">
+                        <label for="cebolla">Cebolla</label>
+                    </div>
+                </div>
+            </fieldset>
+
+<fieldset>
+    
+    <div class="form-group">
+        <label>Método de entrega:</label>
+        <div class="radio-group">
+            <input type="radio" id="domicilio" name="entrega" value="domicilio" required>
+            <label for="domicilio">Enviar a casa</label>
+
+            <input type="radio" id="recoger" name="entrega" value="recoger" required>
+            <label for="recoger">Venir a buscar</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="comentarios">Comentarios adicionales:</label>
+        <textarea id="comentarios" name="comentarios"
+            placeholder="Añada aquí instrucciones especiales para su pedido..."></textarea>
+    </div>
+</fieldset>
+
+            <button type="submit">Realizar Pedido</button>
+            <details>
+                <summary>Protección de datos</summary>
+                <p>Los datos personales de nuestros usuarios están protegidos según la normativa europea de protección
+                    de datos</p>
+            </details>
+        </form>
+
+    </main>
+
+</body>
+
+</html>
